@@ -15,19 +15,22 @@
   <!-- ─── NAVIGATION ─── -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#inicio" class="nav__logo">
-        <span class="nav__logo-text">Centro Asturiano</span>
-        <span class="nav__logo-sub">de México A.C.</span>
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="Centro Asturiano de México" class="nav__logo-badge" />
+        <div class="nav__logo-words">
+          <span class="nav__logo-text">Centro Asturiano</span>
+          <span class="nav__logo-sub">de México A.C.</span>
+        </div>
       </a>
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
-        <li><a href="#historia" class="nav__link">Historia</a></li>
-        <li><a href="#instalaciones" class="nav__link">Instalaciones</a></li>
-        <li><a href="#actividades" class="nav__link">Actividades</a></li>
-        <li><a href="#junta" class="nav__link">Junta Directiva</a></li>
-        <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+        <li><a href="historia.html" class="nav__link">Historia</a></li>
+        <li><a href="index.html#instalaciones" class="nav__link">Instalaciones</a></li>
+        <li><a href="index.html#actividades" class="nav__link">Actividades</a></li>
+        <li><a href="junta-directiva.html" class="nav__link">Junta Directiva</a></li>
+        <li><a href="index.html#contacto" class="nav__link nav__link--cta">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -37,101 +40,71 @@
     <div class="hero__bg"></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <p class="hero__est reveal">Fundado en 1918</p>
+      <img src="assets/logo.png" alt="Escudo del Centro Asturiano de México" class="hero__badge reveal" />
+      <p class="hero__est reveal">Fundado el 7 de febrero de 1918</p>
       <h1 class="hero__title reveal">
         Centro Asturiano<br /><em>de México</em>
       </h1>
       <p class="hero__subtitle reveal">
-        Más de un siglo uniendo a la comunidad asturiana en México a través<br class="hide-mobile" />
-        del deporte, la cultura y la convivencia.
+        Más de un siglo uniendo a la comunidad asturiana en México<br class="hide-mobile" />
+        a través del deporte, la cultura y la convivencia.
       </p>
       <div class="hero__actions reveal">
-        <a href="#historia" class="btn btn--gold">Nuestra Historia</a>
-        <a href="#contacto" class="btn btn--outline">Únete</a>
+        <a href="historia.html" class="btn btn--gold">Nuestra Historia</a>
+        <a href="index.html#contacto" class="btn btn--outline">Únete</a>
       </div>
     </div>
-    <a href="#historia" class="hero__scroll" aria-label="Desplazar hacia abajo">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M12 5v14M5 12l7 7 7-7"/>
-      </svg>
+    <a href="#stats" class="hero__scroll" aria-label="Ver más">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     </a>
   </section>
 
-  <!-- ─── STATS STRIP ─── -->
-  <section class="stats">
+  <!-- ─── STATS ─── -->
+  <section class="stats" id="stats">
     <div class="container">
       <div class="stats__grid">
-        <div class="stat reveal">
-          <span class="stat__number">1918</span>
-          <span class="stat__label">Año de fundación</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__number">106</span>
-          <span class="stat__label">Años de historia</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__number">18+</span>
-          <span class="stat__label">Disciplinas deportivas</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__number">4</span>
-          <span class="stat__label">Instalaciones</span>
-        </div>
+        <div class="stat reveal"><span class="stat__number">1918</span><span class="stat__label">Año de fundación</span></div>
+        <div class="stat reveal"><span class="stat__number">106</span><span class="stat__label">Años de historia</span></div>
+        <div class="stat reveal"><span class="stat__number">18+</span><span class="stat__label">Disciplinas deportivas</span></div>
+        <div class="stat reveal"><span class="stat__number">4</span><span class="stat__label">Instalaciones</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ─── HISTORIA ─── -->
-  <section class="section historia" id="historia">
+  <!-- ─── HISTORIA TEASER ─── -->
+  <section class="section" id="historia-teaser">
     <div class="container">
-      <div class="section__header reveal">
-        <span class="section__tag">Nuestra historia</span>
-        <h2 class="section__title">Más de un siglo de<br /><em>comunidad y orgullo</em></h2>
-      </div>
       <div class="historia__layout">
         <div class="historia__text reveal">
+          <span class="section__tag">Nuestra historia</span>
+          <h2 class="section__title" style="text-align:left; margin-bottom:1.5rem;">Más de un siglo<br /><em>de comunidad</em></h2>
           <p class="lead">
-            El 7 de febrero de 1918, aproximadamente 30 asturianos se reunieron en la Calle de la Amargura — hoy República de Honduras #52 — en la Ciudad de México para dar vida a lo que hoy es el Centro Asturiano de México A.C.
+            El 7 de febrero de 1918, un grupo de asturianos se reunió en la Calle de la Amargura — hoy República de Honduras #52 — para dar vida a lo que hoy somos.
           </p>
           <p>
-            La iniciativa nació con dos objetivos entrelazados: crear un club de fútbol que llevara los colores asturianos — camiseta azul y pantalón blanco — y forjar vínculos de comunidad entre los asturianos en México. De ese encuentro fundacional surgió el <strong>Club Asturias</strong>, con Jesús Moradiellos como primer presidente.
+            La idea fue crear el <strong>Club Asturias</strong> — camisa azul, pantalón blanco — y forjar vínculos entre la comunidad asturiana en México. Cien años después, seguimos siendo ese mismo hogar.
           </p>
-          <p>
-            Ante el rechazo inicial de la Liga Mexicana de Fútbol, los fundadores respondieron con determinación: crearon su propia liga competitiva. Tres victorias consecutivas después, la Liga oficial no tuvo más remedio que aceptar al Club Asturias. En 1919 el club dominó en todas las categorías, y ese mismo año nació <em>La Jira</em>, festival de primavera que celebra la victoria histórica de Pelayo cerca de Gijón.
-          </p>
-          <p>
-            En 1929, la conquista de la Copa Oakley frente al Reforma consolidó el prestigio del club. Desde entonces, la asociación creció de un equipo de fútbol a una sociedad deportiva, cultural y social de primera categoría — un hogar para la comunidad asturiana en México por más de cien años.
-          </p>
+          <div class="historia__cta">
+            <a href="historia.html" class="btn btn--outline-navy">Leer la historia completa</a>
+          </div>
         </div>
-        <div class="historia__timeline reveal">
+        <div class="reveal">
           <div class="timeline">
             <div class="timeline__item">
               <div class="timeline__year">1918</div>
-              <div class="timeline__content">
-                <strong>Fundación</strong>
-                <p>~30 asturianos fundan la asociación en la Ciudad de México. Primer presidente: Jesús Moradiellos.</p>
-              </div>
+              <div class="timeline__content"><strong>Fundación</strong><p>~30 asturianos fundan la asociación. Primer presidente: Jesús Moradiellos.</p></div>
             </div>
             <div class="timeline__item">
               <div class="timeline__year">1919</div>
-              <div class="timeline__content">
-                <strong>Campeones</strong>
-                <p>Dominio en todas las categorías de la liga alternativa. Nace <em>La Jira</em>, festival de primavera.</p>
-              </div>
+              <div class="timeline__content"><strong>Campeones</strong><p>Dominio en todas las categorías. Nace <em>La Jira</em>, festival de primavera.</p></div>
             </div>
             <div class="timeline__item">
               <div class="timeline__year">1929</div>
-              <div class="timeline__content">
-                <strong>Copa Oakley</strong>
-                <p>Victoria frente al Reforma, consolidando el prestigio deportivo del Club Asturias.</p>
-              </div>
+              <div class="timeline__content"><strong>Copa Oakley</strong><p>Victoria frente al Reforma, consolidando el prestigio del Club Asturias.</p></div>
             </div>
             <div class="timeline__item">
               <div class="timeline__year">Hoy</div>
-              <div class="timeline__content">
-                <strong>106 años</strong>
-                <p>Una sociedad plena: deporte, cultura, eventos y cuatro instalaciones en México.</p>
-              </div>
+              <div class="timeline__content"><strong>106 años</strong><p>Deporte, cultura, eventos y cuatro instalaciones en México.</p></div>
             </div>
           </div>
         </div>
@@ -140,7 +113,7 @@
   </section>
 
   <!-- ─── INSTALACIONES ─── -->
-  <section class="section instalaciones" id="instalaciones">
+  <section class="section section--cream" id="instalaciones">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__tag">Nuestros espacios</span>
@@ -148,214 +121,165 @@
       </div>
       <div class="instalaciones__grid">
 
-        <article class="instalacion-card reveal">
+        <a href="instalaciones/parque-asturias.html" class="instalacion-card reveal">
           <div class="instalacion-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4z"/>
-              <path d="M16 28c2-4 8-6 8-6s6 2 8 6"/>
-              <circle cx="24" cy="18" r="4"/>
-            </svg>
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4z"/><path d="M16 28c2-4 8-6 8-6s6 2 8 6"/><circle cx="24" cy="18" r="4"/></svg>
           </div>
           <h3 class="instalacion-card__title">Parque Asturias</h3>
-          <p class="instalacion-card__desc">Instalaciones deportivas al aire libre para los socios. Corazón de la vida deportiva de la asociación.</p>
+          <p class="instalacion-card__desc">150,000 m² de instalaciones deportivas: albercas olímpicas, canchas de tenis, frontón, squash, boliche y más. El corazón deportivo de la asociación.</p>
           <address class="instalacion-card__address">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
             Cáliz 118, Col. El Reloj, 04640 CDMX
           </address>
           <p class="instalacion-card__phone">55 5610-1124 · 5610-1723</p>
-        </article>
+          <span class="instalacion-card__link">Ver instalación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
 
-        <article class="instalacion-card reveal">
+        <a href="instalaciones/edificio-sociocultural.html" class="instalacion-card reveal">
           <div class="instalacion-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="6" y="14" width="36" height="28" rx="2"/>
-              <path d="M16 14V10a2 2 0 012-2h12a2 2 0 012 2v4"/>
-              <path d="M24 22v10M19 27h10"/>
-            </svg>
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="14" width="36" height="28" rx="2"/><path d="M16 14V10a2 2 0 012-2h12a2 2 0 012 2v4"/><path d="M24 22v10M19 27h10"/></svg>
           </div>
           <h3 class="instalacion-card__title">Edificio Sociocultural</h3>
-          <p class="instalacion-card__desc">Sede de actividades culturales, eventos sociales y reuniones de la comunidad asturiana en la capital.</p>
+          <p class="instalacion-card__desc">Auditorium de 263 asientos, salones de banquetes, gimnasio, restaurante y más. Sede de la vida cultural y social de la asociación.</p>
           <address class="instalacion-card__address">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
             Arquímedes 4, Col. Chapultepec Morales, 11570 CDMX
           </address>
           <p class="instalacion-card__phone">55 5281-0024 · 5281-0141</p>
-        </article>
+          <span class="instalacion-card__link">Ver instalación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
 
-        <article class="instalacion-card reveal">
+        <a href="instalaciones/club-campestre.html" class="instalacion-card reveal">
           <div class="instalacion-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M8 36C8 24 16 12 24 8c8 4 16 16 16 28"/>
-              <path d="M4 36h40"/>
-              <path d="M16 36v-8a4 4 0 018 0v8"/>
-            </svg>
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 36C8 24 16 12 24 8c8 4 16 16 16 28"/><path d="M4 36h40"/><path d="M16 36v-8a4 4 0 018 0v8"/></svg>
           </div>
           <h3 class="instalacion-card__title">Club Campestre Ecológico</h3>
-          <p class="instalacion-card__desc">Retiro ecológico con campo de golf, hotel y actividades al aire libre en el hermoso Estado de Morelos.</p>
+          <p class="instalacion-card__desc">850,000 m² en Morelos. Campo de golf de 18 hoyos, parque acuático, hoteles Villas Asturianas, restaurantes, boliche, cine y reserva ecológica.</p>
           <address class="instalacion-card__address">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
             Carr. Federal Cuautla–Chalco–México km 53, Atlatlahucan, Morelos
           </address>
           <p class="instalacion-card__phone">597 106-1070</p>
-        </article>
+          <span class="instalacion-card__link">Ver instalación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
 
-        <article class="instalacion-card reveal">
+        <a href="instalaciones/la-casona.html" class="instalacion-card reveal">
           <div class="instalacion-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M8 40V18L24 8l16 10v22"/>
-              <rect x="18" y="28" width="12" height="12"/>
-              <path d="M14 20h4M30 20h4M14 28h4M30 28h4"/>
-            </svg>
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 40V18L24 8l16 10v22"/><rect x="18" y="28" width="12" height="12"/><path d="M14 20h4M30 20h4M14 28h4M30 28h4"/></svg>
           </div>
           <h3 class="instalacion-card__title">La Casona</h3>
-          <p class="instalacion-card__desc">Espacio con historia y carácter. Venue privilegiado para eventos especiales y reuniones de la asociación.</p>
+          <p class="instalacion-card__desc">Joya arquitectónica de 1920-1925 en la Colonia Roma. Cedida a la UNAM como Casa Universitaria del Libro (CASUL), alberga 300+ actividades culturales al año.</p>
           <address class="instalacion-card__address">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
-            Ciudad de México
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Orizaba y Puebla, Col. Roma Norte, CDMX
           </address>
-        </article>
+          <span class="instalacion-card__link">Ver instalación <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
 
       </div>
     </div>
   </section>
 
   <!-- ─── ACTIVIDADES ─── -->
-  <section class="section actividades" id="actividades">
+  <section class="section section--navy" id="actividades">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__tag">Vida activa</span>
         <h2 class="section__title">Deportes y<br /><em>cultura para todos</em></h2>
       </div>
-
       <div class="actividades__tabs reveal">
         <button class="tab-btn tab-btn--active" data-tab="deportes">Deportes</button>
         <button class="tab-btn" data-tab="cultura">Cultura</button>
-        <button class="tab-btn" data-tab="eventos">Eventos</button>
+        <button class="tab-btn" data-tab="eventos">Últimas noticias</button>
       </div>
-
       <div class="tab-panel tab-panel--active" id="tab-deportes">
         <div class="actividades__grid">
-          <div class="actividad-pill">Ajedrez</div>
-          <div class="actividad-pill">Atletismo</div>
-          <div class="actividad-pill">Badminton</div>
-          <div class="actividad-pill">Basquetbol</div>
-          <div class="actividad-pill">Boliche</div>
-          <div class="actividad-pill">Boxeo</div>
-          <div class="actividad-pill">Buceo</div>
-          <div class="actividad-pill">Esquash</div>
-          <div class="actividad-pill">Frontenis</div>
-          <div class="actividad-pill">Gimnasia</div>
-          <div class="actividad-pill">Golf</div>
-          <div class="actividad-pill">Natación</div>
-          <div class="actividad-pill">Padel</div>
-          <div class="actividad-pill">Parkour</div>
-          <div class="actividad-pill">Taekwondo</div>
-          <div class="actividad-pill">Tenis</div>
-          <div class="actividad-pill">Volibol</div>
-          <div class="actividad-pill">Yoga</div>
+          <div class="actividad-pill">Ajedrez</div><div class="actividad-pill">Atletismo</div><div class="actividad-pill">Badminton</div>
+          <div class="actividad-pill">Basquetbol</div><div class="actividad-pill">Boliche</div><div class="actividad-pill">Boxeo</div>
+          <div class="actividad-pill">Buceo</div><div class="actividad-pill">Esquash</div><div class="actividad-pill">Frontenis</div>
+          <div class="actividad-pill">Gimnasia</div><div class="actividad-pill">Golf</div><div class="actividad-pill">Natación</div>
+          <div class="actividad-pill">Padel</div><div class="actividad-pill">Parkour</div><div class="actividad-pill">Taekwondo</div>
+          <div class="actividad-pill">Tenis</div><div class="actividad-pill">Volibol</div><div class="actividad-pill">Yoga</div>
         </div>
       </div>
-
       <div class="tab-panel" id="tab-cultura">
         <div class="actividades__grid">
-          <div class="actividad-card">
+          <a href="noticias/asi-es-asturias.html" class="actividad-card">
             <h4>Así es Asturias</h4>
-            <p>Programa de educación cultural para mantener viva la identidad y el patrimonio asturiano entre nuestros socios.</p>
-          </div>
+            <p>Viaje cultural a Asturias para jóvenes socios: museos, cuevas prehistóricas, sidrerías y las autoridades del Principado.</p>
+            <span class="actividad-card__link">Leer más →</span>
+          </a>
           <div class="actividad-card">
             <h4>Flamenco</h4>
             <p>Clases y presentaciones del arte flamenco, fusión de la pasión española con el alma de nuestra comunidad.</p>
           </div>
           <div class="actividad-card">
             <h4>Danza Aérea</h4>
-            <p>Disciplina artística de vanguardia que combina danza y acrobacia en el aire.</p>
+            <p>Disciplina artística que combina danza y acrobacia en el aire para socios de todas las edades.</p>
           </div>
           <div class="actividad-card">
             <h4>TECA</h4>
-            <p>Taller de expresión cultural y artística para socios de todas las edades.</p>
+            <p>Taller de Expresión Cultural y Artística: espacio de creación abierto a la comunidad.</p>
           </div>
         </div>
       </div>
-
       <div class="tab-panel" id="tab-eventos">
         <div class="actividades__grid">
-          <div class="actividad-card">
-            <h4>Baile de Antroxu</h4>
-            <p>Celebración del Carnaval asturiano: música, disfraces y la alegría del <em>antroxu</em> en el corazón de México.</p>
-          </div>
-          <div class="actividad-card">
-            <h4>Romería del Socio</h4>
-            <p>La romería tradicional que une a los socios en un día de convivencia, gastronomía y espíritu asturiano.</p>
-          </div>
-          <div class="actividad-card">
-            <h4>Jira de Paella</h4>
-            <p>Reunión gastronómica donde la paella es el pretexto perfecto para encontrarse en comunidad.</p>
-          </div>
-          <div class="actividad-card">
-            <h4>Noche de Ánimas</h4>
-            <p>Observancia del Día de Muertos con el carácter y las tradiciones propias de nuestra asociación.</p>
-          </div>
+          <a href="noticias/baile-de-antroxu.html" class="actividad-card">
+            <h4>Baile de Antroxu 2025</h4>
+            <p>Carnaval asturiano en el Parque Asturias: música, carros alegóricos, disfraces y la alegría del <em>antroxu</em>.</p>
+            <span class="actividad-card__link">Leer más →</span>
+          </a>
+          <a href="noticias/actualidad-en-padel.html" class="actividad-card">
+            <h4>Torneo de las Roscas de Reyes</h4>
+            <p>108 jugadores, 6 categorías. El torneo de pádel más grande del año, con record de participación.</p>
+            <span class="actividad-card__link">Leer más →</span>
+          </a>
+          <a href="noticias/primer-torneo-frontenis.html" class="actividad-card">
+            <h4>Primer Torneo de Frontenis 2025</h4>
+            <p>El Torneo de los Tamales: frontenis de dobles en el Día de la Candelaria. Competencia reñida y convivencia.</p>
+            <span class="actividad-card__link">Leer más →</span>
+          </a>
+          <a href="noticias/asamblea-2025.html" class="actividad-card">
+            <h4>Asamblea General 2025</h4>
+            <p>El 2 de febrero de 2025, la Asamblea aprobó las actividades de 2024 y eligió la nueva Junta Directiva.</p>
+            <span class="actividad-card__link">Leer más →</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── JUNTA DIRECTIVA ─── -->
-  <section class="section junta" id="junta">
+  <!-- ─── JUNTA DIRECTIVA TEASER ─── -->
+  <section class="section section--cream" id="junta-teaser">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__tag">2025 – 2026</span>
         <h2 class="section__title">Junta<br /><em>Directiva</em></h2>
       </div>
       <div class="junta__grid">
-        <div class="junta__card reveal">
-          <span class="junta__role">Presidente</span>
-          <strong class="junta__name">Manuel Arias Díaz</strong>
-          <span class="junta__member">Socio #1299</span>
-        </div>
-        <div class="junta__card reveal">
-          <span class="junta__role">Vicepresidente</span>
-          <strong class="junta__name">Domingo Daniel Feito Feito</strong>
-          <span class="junta__member">Socio #628</span>
-        </div>
-        <div class="junta__card reveal">
-          <span class="junta__role">Secretario</span>
-          <strong class="junta__name">Juan Luis López y García</strong>
-          <span class="junta__member">Socio #822</span>
-        </div>
-        <div class="junta__card reveal">
-          <span class="junta__role">Secretario Suplente</span>
-          <strong class="junta__name">Miguel Ángel Fernández Gonzalo</strong>
-          <span class="junta__member">Socio #1589</span>
-        </div>
-        <div class="junta__card reveal">
-          <span class="junta__role">Tesorero</span>
-          <strong class="junta__name">Francisco Rodríguez Fuertes</strong>
-          <span class="junta__member">Socio #1141</span>
-        </div>
-        <div class="junta__card reveal">
-          <span class="junta__role">Tesorero Suplente</span>
-          <strong class="junta__name">César Noval Garrido</strong>
-          <span class="junta__member">Socio #27</span>
-        </div>
-        <div class="junta__card reveal">
-          <span class="junta__role">Auditor</span>
-          <strong class="junta__name">Francisco Javier Álvarez Romano</strong>
-          <span class="junta__member">Socio #11</span>
+        <div class="junta__card reveal"><span class="junta__role">Presidente</span><strong class="junta__name">Manuel Arias Díaz</strong><span class="junta__member">Socio #1299</span></div>
+        <div class="junta__card reveal"><span class="junta__role">Vicepresidente</span><strong class="junta__name">Domingo Daniel Feito Feito</strong><span class="junta__member">Socio #628</span></div>
+        <div class="junta__card reveal"><span class="junta__role">Secretario</span><strong class="junta__name">Juan Luis López y García</strong><span class="junta__member">Socio #822</span></div>
+        <div class="junta__card reveal"><span class="junta__role">Tesorero</span><strong class="junta__name">Francisco Rodríguez Fuertes</strong><span class="junta__member">Socio #1141</span></div>
+        <div class="junta__card reveal"><span class="junta__role">Auditor</span><strong class="junta__name">Francisco Javier Álvarez Romano</strong><span class="junta__member">Socio #11</span></div>
+        <div class="junta__card reveal" style="background:var(--navy);cursor:pointer;" onclick="location.href='junta-directiva.html'">
+          <span class="junta__role" style="color:var(--gold)">Ver todos</span>
+          <strong class="junta__name" style="color:var(--white)">Junta Directiva completa</strong>
+          <span class="junta__member" style="color:rgba(255,255,255,0.5)">27 miembros + Comisión de Auditoría →</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ─── CONTACTO ─── -->
-  <section class="section contacto" id="contacto">
+  <section class="section" id="contacto">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__tag">Encuéntranos</span>
         <h2 class="section__title">Contacto e<br /><em>Información</em></h2>
       </div>
       <div class="contacto__grid">
-
         <div class="contacto__card reveal">
           <h3>Parque Asturias</h3>
           <address>Cáliz 118<br />Col. El Reloj, 04640<br />Ciudad de México</address>
@@ -363,8 +287,10 @@
             <a href="tel:5556101124">55 5610-1124</a>
             <a href="tel:5556101723">55 5610-1723</a>
           </div>
+          <div class="contacto__map">
+            <iframe title="Parque Asturias en Google Maps" src="https://maps.google.com/maps?q=Caliz+118+Colonia+El+Reloj+CDMX&z=15&output=embed" class="map-frame" loading="lazy" allowfullscreen></iframe>
+          </div>
         </div>
-
         <div class="contacto__card reveal">
           <h3>Edificio Sociocultural</h3>
           <address>Arquímedes 4<br />Col. Chapultepec Morales, 11570<br />Ciudad de México</address>
@@ -372,8 +298,10 @@
             <a href="tel:5552810024">55 5281-0024</a>
             <a href="tel:5552810141">55 5281-0141</a>
           </div>
+          <div class="contacto__map">
+            <iframe title="Edificio Sociocultural en Google Maps" src="https://maps.google.com/maps?q=Arquimedes+4+Chapultepec+Morales+Mexico+City&z=16&output=embed" class="map-frame" loading="lazy" allowfullscreen></iframe>
+          </div>
         </div>
-
         <div class="contacto__card reveal">
           <h3>Club Campestre Ecológico</h3>
           <address>Carr. Fed. Cuautla–Chalco–México km 53<br />Atlatlahucan, Morelos 62840</address>
@@ -382,20 +310,19 @@
             <a href="tel:5971061090">Golf: 597 106-1090</a>
             <a href="tel:5971061040">Hotel: 597 106-1040</a>
           </div>
+          <div class="contacto__map">
+            <iframe title="Club Campestre Ecológico en Google Maps" src="https://maps.google.com/maps?q=18.9750961,-98.8654535&z=14&output=embed" class="map-frame" loading="lazy" allowfullscreen></iframe>
+          </div>
         </div>
-
       </div>
-
       <div class="contacto__social reveal">
         <p>Síguenos en redes sociales</p>
         <div class="social__links">
           <a href="https://www.facebook.com/CentroAsturianoDeMexico" target="_blank" rel="noopener" class="social__link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-            Facebook
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook
           </a>
           <a href="https://www.youtube.com/@centroasturianodemexicoa.c9127" target="_blank" rel="noopener" class="social__link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
-            YouTube
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>YouTube
           </a>
         </div>
       </div>
@@ -407,18 +334,27 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__brand">
-          <p class="footer__name">Centro Asturiano de México A.C.</p>
-          <p class="footer__tagline">Fundado el 7 de febrero de 1918</p>
+          <img src="assets/logo.png" alt="Logo" class="footer__badge" />
+          <div class="footer__brand-words">
+            <p class="footer__name">Centro Asturiano de México A.C.</p>
+            <p class="footer__tagline">Fundado el 7 de febrero de 1918</p>
+          </div>
         </div>
         <nav class="footer__nav">
-          <a href="#historia">Historia</a>
-          <a href="#instalaciones">Instalaciones</a>
-          <a href="#actividades">Actividades</a>
-          <a href="#junta">Junta Directiva</a>
-          <a href="#contacto">Contacto</a>
+          <a href="historia.html">Historia</a>
+          <a href="index.html#instalaciones">Instalaciones</a>
+          <a href="index.html#actividades">Actividades</a>
+          <a href="junta-directiva.html">Junta Directiva</a>
+          <a href="index.html#contacto">Contacto</a>
         </nav>
       </div>
-      <p class="footer__copy">© 2026 Centro Asturiano de México A.C.</p>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Centro Asturiano de México A.C.</p>
+        <a href="https://www.centroasturianodemexico.com/wp-content/uploads/2025/07/avisodeprivacidad2025.pdf" target="_blank" rel="noopener" class="footer__legal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+          Aviso de Privacidad 2025
+        </a>
+      </div>
     </div>
   </footer>
 
